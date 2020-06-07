@@ -1,0 +1,158 @@
+.root {
+	-fx-background-color: #242729;
+	-fx-font: 12px Arial;
+}
+
+.table-view {
+	-fx-background-color: #242729;
+	-fx-background-insets: 1 1 1 1;
+	-fx-background-radius: 10;
+	-fx-border-color: #393d41;
+	-fx-border-radius: 10;
+	-fx-effect: dropshadow(two-pass-box, rgba(0,0,0,0.8), 10, 0, 2, 2);
+}
+
+		/* Scroll bar */
+/* ----------------------------------------------*/
+.scroll-bar{
+	-fx-background-color: #393c3e;
+	-fx-background-radius: 2em;
+}
+
+.scroll-bar:horizontal .track {
+	-fx-background-color: transparent;
+	-fx-border-color:transparent;
+	-fx-background-radius: 2em;
+}
+
+.scroll-bar:horizontal .thumb {
+	-fx-background-color: #242729;
+	-fx-background-insets: 4 0 4 0;
+	-fx-background-radius: 2em;
+}
+
+.scroll-bar:horizontal .thumb:pressed{
+ 	-fx-background-color: #a7a8a9;
+}
+
+/* ---------------------------------------------*/
+.table-view .column-header-background {
+	-fx-background-color: #770000;
+	-fx-background-radius: 10 10 0 0;
+}
+
+.table-view .column-header, .table-view .filler {
+	-fx-size: 30;
+	-fx-border-width: 0 0 10 0;
+	-fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+	-fx-text-fill: #e5e5e5;
+}
+
+.table-view .cell{
+	-fx-cell-size: 35; 
+ 	-fx-alignment: center; 
+	-fx-background-color: transparent;
+	-fx-border-color: #393d41 transparent #393d41 transparent; 
+	-fx-border-width: 0.5px;
+	-fx-text-fill: #e5e5e5;
+
+}
+
+.table-row-cell:selected .text {
+       -fx-fill: red;
+}
+
+.button {
+	-fx-font-weight: bold;
+	-fx-background-color: #770000;
+	-fx-text-fill: #e5e5e5;
+	-fx-border-radius: 5px;
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 4, 0, 1, 1);
+}
+
+			/* Line Chart */
+/* -----------------------------------------------------------------*/
+
+.chart {
+	-fx-border-color: #393d41;
+	-fx-border-radius: 10;
+}
+
+/* Top */
+.chart-title{
+	-fx-text-fill: #e5e5e5;
+	-fx-font-size: 0.5cm;
+	-fx-effect: dropshadow( two-pass-box , black, 5, 0.0 , 3 , 3 );
+}
+/* eo Top */
+
+/* Lines color */
+.chart-series-line {
+	-fx-stroke: #f9d900;
+	-fx-stroke-width: 3px;
+	-fx-effect: dropshadow( two-pass-box , rgba(0,0,0,0.3) , 8, 0.0 , 0 , 3 );
+}
+
+.default-color0.chart-series-line { -fx-stroke: #AA0000; }
+.default-color1.chart-series-line { -fx-stroke: #f0e68c; }
+/* eo lines */
+
+/* Middle*/
+.chart-plot-background {
+	-fx-background-color: transparent;
+}
+
+.axis-label {
+	-fx-text-fill: #e5e5e5;
+	-fx-font-size: 0.3cm;
+	-fx-effect: dropshadow( two-pass-box , black, 5, 0.0 , 3 , 3 );
+}
+
+
+.axis:left {
+	-fx-border-color: transparent #e5e5e5 transparent transparent ; 
+	-fx-tick-label-fill: #e5e5e5; 
+	-fx-effect: dropshadow( two-pass-box , black, 3, 0.0 , 3 , 3 );
+}
+.axis:bottom {
+	-fx-border-color: #e5e5e5 transparent transparent; 
+	-fx-tick-label-fill: #e5e5e5;
+	-fx-effect: dropshadow( two-pass-box , black, 3, 0.0 , 3 , 3 );
+}
+
+
+.chart-vertical-grid-lines {
+	-fx-stroke-width: 0.2px;
+	-fx-stroke: #e5e5e5;
+}
+
+.chart-horizontal-grid-lines {
+	-fx-stroke-width: 0.2px;
+	-fx-stroke: #e5e5e5;
+}
+/* eo middle */
+
+/* bottom */
+.default-color0.chart-line-symbol { -fx-background-color: #AA0000; }
+.default-color1.chart-line-symbol { -fx-background-color: #f0e68c; }
+
+.chart-legend {
+	-fx-background-color:  transparent;
+	-fx-padding: 20px;
+}
+
+.chart-legend-item{
+	-fx-text-fill: #e5e5e5;
+	-fx-effect: dropshadow( two-pass-box , black, 5, 0.0 , 3 , 3 );
+}
+/* eo bottom */
+
+.chart-line-symbol {
+	-fx-background-color: #f9d900, white;
+	-fx-background-insets: 0, 2;
+	-fx-background-radius: 5px;
+	-fx-padding: 5px;
+}
